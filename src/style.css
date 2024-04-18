@@ -61,3 +61,7 @@
   z-index: 1000;
   transform: translateX(-50%);
 }
+
+.red-suit {
+  color: red;
+}

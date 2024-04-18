@@ -37,6 +37,14 @@ let generateDisplayCard = () => {
   let bottomIcon = document.querySelector(".bottom-icon");
   let cardContent = document.querySelector(".card-content p");
 
+  topIcon.className = "top-icon";
+  bottomIcon.className = "bottom-icon";
+
+  if (suit === "♥" || suit === "♦") {
+    topIcon.classList.add("red-suit");
+    bottomIcon.classList.add("red-suit");
+  }
+
   topIcon.innerHTML = suit;
   bottomIcon.innerHTML = suit;
   cardContent.innerHTML = `<strong>${cardNumber}</strong>`;
